@@ -5,12 +5,8 @@
     <title>Testnet faucet :)</title>
   </head>
   <body>
-      {% if error %}
-        {{ error }}
-      {% else %}
-        <p> We sent {{amount}} sats to {{address}}! </p>
-        <p> Txid: {{txid}} </p>
-      {% endif %}
+      <p> We sent {{amount}} sats to {{address}}! </p>
+      <p> Txid: {{txid}} </p>
       <a href="/">Home</a>
   </body>
 </html>
