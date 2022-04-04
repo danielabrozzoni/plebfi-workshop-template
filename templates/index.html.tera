@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Testnet faucet :)</title>
+  </head>
+  <body>
+      <h1>My balance is {{balance}}</h1>
+      <h2>Plz send money to {{address}}</h2>
+      {% if can_spend %}
+        <form action="/send" method="post">
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <input type="submit" value="Send send send">
+        </form>
+      {% else %}
+      Sorry, no coins for now, we're poor
+      {% endif %}
+  </body>
+</html>

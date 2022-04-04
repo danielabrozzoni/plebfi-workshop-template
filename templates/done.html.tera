@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Testnet faucet :)</title>
+  </head>
+  <body>
+      {% if error %}
+        {{ error }}
+      {% else %}
+        <p> We sent {{amount}} sats to {{address}}! </p>
+        <p> Txid: {{txid}} </p>
+      {% endif %}
+      <a href="/">Home</a>
+  </body>
+</html>
